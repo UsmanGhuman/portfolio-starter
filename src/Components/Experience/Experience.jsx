@@ -14,7 +14,7 @@ export default function Experience() {
         <span>Projects</span>
     </div>
     <div className="achievement">
-        <div className="circle">2 months+</div>
+        <div className="circle">2mo+</div>
         <span>companies</span>
         <span>work</span>
     </div>
