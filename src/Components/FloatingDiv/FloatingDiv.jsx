@@ -1,14 +1,16 @@
 import React from 'react'
 import './FloatingDiv.css';
-export default function FloatingDiv({image, txt1, txt2}) {
+export default function FloatingDiv({ image, txt1, txt2 }) {
+
+  
   return (
-   <div className="floatingdiv">
-    <img src={image} alt="" />
-    <span>
+    <div className="floatingdiv">
+      <img src={image} alt="" />
+      <span>
         {txt1}
         <br />
         {txt2}
-    </span>
-   </div>
+      </span>
+    </div>
   )
 }

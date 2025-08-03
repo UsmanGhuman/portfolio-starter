@@ -4,7 +4,7 @@ import Sun from '@iconscout/react-unicons/icons/uil-sun'
 import Moon from '@iconscout/react-unicons/icons/uil-moon'
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
-import { type } from '@testing-library/user-event/dist/type';
+// import { type } from '@testing-library/user-event/dist/type';
 export default function Toogle() {
 
     const theme = useContext(themeContext);

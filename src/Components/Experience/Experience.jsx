@@ -2,7 +2,7 @@ import React from 'react'
 import './Experience.css'
 export default function Experience() {
   return (
-   <div className="experience">
+   <div className="experience" id='Experience'>
     <div className="achievement">
         <div className="circle">Fresh</div>
         <span>years</span>

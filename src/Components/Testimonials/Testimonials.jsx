@@ -35,7 +35,7 @@ export default function Testimonials() {
 
     ]
   return (
-    <div className="t-wrapper">
+    <div className="t-wrapper" id='Testimomial'>
         <div className="t-heading">
             <span>Clients always get</span>
             <span>Exceptional Work</span>
