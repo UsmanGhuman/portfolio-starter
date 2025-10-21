@@ -1,22 +1,27 @@
-.contact-form{
-    padding: 0 3rem 0 3rem;
+.contact-form {
+    padding: 0 3rem;
     display: flex;
     height: 80vh;
     margin-top: 4rem;
 }
-.c-right{
+
+/* Right section (form area) */
+.c-right {
     display: flex;
     justify-content: center;
     position: relative;
     flex: 1;
 }
-.c-right>form{
+
+.c-right > form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
 }
-.c-right .user{
+
+/* Input fields */
+.c-right .user {
     width: 20rem;
     height: 2rem;
     padding: 0.3rem;
@@ -25,13 +30,102 @@
     border-radius: 8px;
     font-size: 16px;
 }
-textarea{
-    height: 4rem!important;
+
+textarea {
+    height: 4rem !important;
 }
-.c-blur{
+
+.c-blur {
     top: 1rem;
     left: 8rem;
 }
-@media screen and (max-width: 480px){
-    
+
+/* 💻 Medium screens (Tablets) */
+@media screen and (max-width: 1024px) {
+    .contact-form {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 0 2rem;
+        margin-top: 3rem;
+    }
+
+    .c-right {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .c-right .user {
+        width: 80%;
+        max-width: 22rem;
+    }
+
+    .awesome span {
+        text-align: center;
+        display: block;
+    }
+}
+
+/* 📱 Small screens (Mobiles) */
+@media screen and (max-width: 768px) {
+    .contact-form {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1.5rem;
+        margin-top: 2rem;
+        height: auto;
+    }
+
+    .w-left {
+        text-align: center;
+    }
+
+    .c-right .user {
+        width: 90%;
+        max-width: 20rem;
+    }
+
+    .c-right > form {
+        gap: 1.5rem;
+    }
+
+    .c-right input[type="submit"] {
+        width: 50%;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    textarea {
+        height: 5rem !important;
+    }
+}
+
+/* 📱 Extra small screens (below 480px) */
+@media screen and (max-width: 480px) {
+    .contact-form {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+        margin-top: 1.5rem;
+        height: auto;
+    }
+
+    .c-right .user {
+        width: 100%;
+        max-width: 18rem;
+        font-size: 14px;
+    }
+
+    .c-right > form {
+        gap: 1.2rem;
+    }
+
+    .c-right input[type="submit"] {
+        width: 60%;
+        font-size: 0.85rem;
+    }
+
+    textarea {
+        height: 5rem !important;
+    }
 }

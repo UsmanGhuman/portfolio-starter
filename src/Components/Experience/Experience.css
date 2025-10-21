@@ -7,6 +7,7 @@
     margin-bottom: 8rem;
 }
 
+/* Achievements */
 .achievement {
     display: flex;
     flex-direction: column;
@@ -43,4 +44,44 @@
 
 .achievement span:nth-of-type(2) {
     color: var(--orange);
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 1024px) {
+    .experience {
+        gap: 3rem;
+        height: auto;
+        flex-wrap: wrap;
+        margin-bottom: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience {
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .circle {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+        padding: 0 1rem;
+    }
+
+    .circle {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
 }
